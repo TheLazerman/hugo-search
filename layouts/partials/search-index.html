@@ -11,7 +11,7 @@
 {{- end -}}
 <!-- search index -->
 <script>
-  let indexURL = {{ absURL "searchindex.json"  }};
+  let indexURL = {{ urls.absURL "searchindex.json"  }};
   let includeSectionsInSearch = {{ $search_sections }};
   let search_no_results = {{ i18n `search_no_results` | default "0 results for"}};
   let search_initial_message = {{ i18n `search_initial_message`}};
